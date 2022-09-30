@@ -1,0 +1,13 @@
+def smallerNumbers(arr, N):
+    for i in range(N):
+        count = 0
+        for j in range(N):
+            if (arr[j] < arr[i]):
+                count += 1
+        print(count, end=" ")
+if _name_ == "_main_":
+ 
+    arr = [8,1,2,2,3]
+    N = len(arr)
+ 
+    smallerNumbers(arr, N)
